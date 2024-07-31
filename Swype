@@ -1,0 +1,47 @@
+{
+ "inbounds": [],
+ "outbounds": [
+  {
+   "mux": {
+    "enabled": false
+   },
+   "protocol": "vless",
+   "settings": {
+    "vnext": [
+     {
+      "address": "yallo.ch",
+      "port": 80,
+      "users": [
+       {
+        "encryption": "none",
+        "id": "ilyass-ws",
+        "level": 8
+       }
+      ]
+     }
+    ]
+   },
+   "streamSettings": {
+    "network": "ws",
+    "security": "none",
+    "wsSettings": {
+     "headers": {
+      "Host": "d315g65u6rmjbz.cloudfront.net"
+     },
+     "path": "\/vless"
+    }
+   },
+   "tag": "VLESS"
+  }
+ ],
+ "policy": {
+  "levels": {
+   "8": {
+    "connIdle": 300,
+    "downlinkOnly": 1,
+    "handshake": 4,
+    "uplinkOnly": 1
+   }
+  }
+ }
+}
